@@ -33,3 +33,8 @@
  make entrys sortable
  
  create statistic views
+
+# Change-Log
+
+ added: show annotations where cases are located on the map
+ added: preparations and implementation of title and subtitles for annotations
