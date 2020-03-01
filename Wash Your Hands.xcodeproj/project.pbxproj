@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		013A7DD2240B191D00067D40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A7DD1240B191D00067D40 /* AppDelegate.m */; };
+		013A7DD5240B191D00067D40 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A7DD4240B191D00067D40 /* SceneDelegate.m */; };
+		013A7DD8240B191D00067D40 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A7DD7240B191D00067D40 /* MasterViewController.m */; };
+		013A7DDB240B191D00067D40 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A7DDA240B191D00067D40 /* DetailViewController.m */; };
+		013A7DDE240B191D00067D40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013A7DDC240B191D00067D40 /* Main.storyboard */; };
+		013A7DE0240B191F00067D40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013A7DDF240B191F00067D40 /* Assets.xcassets */; };
+		013A7DE3240B191F00067D40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013A7DE1240B191F00067D40 /* LaunchScreen.storyboard */; };
+		013A7DE6240B191F00067D40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A7DE5240B191F00067D40 /* main.m */; };
+		013A7DF2240B1AE800067D40 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A7DF1240B1AE800067D40 /* CHCSVParser.m */; };
+		013A7DF4240B232400067D40 /* CSVParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 013A7DF3240B232400067D40 /* CSVParser.h */; };
+		013A7DF5240B235700067D40 /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A7DEE240B1A5500067D40 /* CSVParser.m */; };
+		013A7DFD240B535E00067D40 /* europe-test-29-02-2020.csv in Resources */ = {isa = PBXBuildFile; fileRef = 013A7DFC240B535D00067D40 /* europe-test-29-02-2020.csv */; };
+		013A7DFF240B6F8E00067D40 /* germany.csv in Resources */ = {isa = PBXBuildFile; fileRef = 013A7DFE240B6F8800067D40 /* germany.csv */; };
+		013A7E02240B81A900067D40 /* CovidVictim.m in Sources */ = {isa = PBXBuildFile; fileRef = 013A7E01240B81A900067D40 /* CovidVictim.m */; };
+		013A7E05240B90FA00067D40 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013A7E04240B90FA00067D40 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		013A7DCD240B191D00067D40 /* Wash Your Hands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wash Your Hands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		013A7DD0240B191D00067D40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		013A7DD1240B191D00067D40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		013A7DD3240B191D00067D40 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		013A7DD4240B191D00067D40 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		013A7DD6240B191D00067D40 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		013A7DD7240B191D00067D40 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		013A7DD9240B191D00067D40 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		013A7DDA240B191D00067D40 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		013A7DDD240B191D00067D40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		013A7DDF240B191F00067D40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		013A7DE2240B191F00067D40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		013A7DE4240B191F00067D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013A7DE5240B191F00067D40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		013A7DEE240B1A5500067D40 /* CSVParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSVParser.m; sourceTree = "<group>"; };
+		013A7DF0240B1A9E00067D40 /* CHCSVParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		013A7DF1240B1AE800067D40 /* CHCSVParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		013A7DF3240B232400067D40 /* CSVParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSVParser.h; sourceTree = "<group>"; };
+		013A7DFC240B535D00067D40 /* europe-test-29-02-2020.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "europe-test-29-02-2020.csv"; sourceTree = "<group>"; };
+		013A7DFE240B6F8800067D40 /* germany.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = germany.csv; sourceTree = "<group>"; };
+		013A7E00240B81A900067D40 /* CovidVictim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CovidVictim.h; sourceTree = "<group>"; };
+		013A7E01240B81A900067D40 /* CovidVictim.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CovidVictim.m; sourceTree = "<group>"; };
+		013A7E04240B90FA00067D40 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		013A7DCA240B191D00067D40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013A7E05240B90FA00067D40 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		013A7DC4240B191D00067D40 = {
+			isa = PBXGroup;
+			children = (
+				013A7DCF240B191D00067D40 /* Wash Your Hands */,
+				013A7DCE240B191D00067D40 /* Products */,
+				013A7E03240B90FA00067D40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		013A7DCE240B191D00067D40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				013A7DCD240B191D00067D40 /* Wash Your Hands.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		013A7DCF240B191D00067D40 /* Wash Your Hands */ = {
+			isa = PBXGroup;
+			children = (
+				013A7DED240B1A0B00067D40 /* CSVParser */,
+				013A7DEC240B19D500067D40 /* Resources */,
+				013A7DD0240B191D00067D40 /* AppDelegate.h */,
+				013A7DD1240B191D00067D40 /* AppDelegate.m */,
+				013A7DD3240B191D00067D40 /* SceneDelegate.h */,
+				013A7DD4240B191D00067D40 /* SceneDelegate.m */,
+				013A7DD6240B191D00067D40 /* MasterViewController.h */,
+				013A7DD7240B191D00067D40 /* MasterViewController.m */,
+				013A7DD9240B191D00067D40 /* DetailViewController.h */,
+				013A7DDA240B191D00067D40 /* DetailViewController.m */,
+				013A7E00240B81A900067D40 /* CovidVictim.h */,
+				013A7E01240B81A900067D40 /* CovidVictim.m */,
+				013A7DDC240B191D00067D40 /* Main.storyboard */,
+				013A7DDF240B191F00067D40 /* Assets.xcassets */,
+				013A7DE1240B191F00067D40 /* LaunchScreen.storyboard */,
+				013A7DE4240B191F00067D40 /* Info.plist */,
+				013A7DE5240B191F00067D40 /* main.m */,
+			);
+			path = "Wash Your Hands";
+			sourceTree = "<group>";
+		};
+		013A7DEC240B19D500067D40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				013A7DFC240B535D00067D40 /* europe-test-29-02-2020.csv */,
+				013A7DFE240B6F8800067D40 /* germany.csv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		013A7DED240B1A0B00067D40 /* CSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				013A7DF3240B232400067D40 /* CSVParser.h */,
+				013A7DEE240B1A5500067D40 /* CSVParser.m */,
+				013A7DF0240B1A9E00067D40 /* CHCSVParser.h */,
+				013A7DF1240B1AE800067D40 /* CHCSVParser.m */,
+			);
+			path = CSVParser;
+			sourceTree = "<group>";
+		};
+		013A7E03240B90FA00067D40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				013A7E04240B90FA00067D40 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		013A7DCC240B191D00067D40 /* Wash Your Hands */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013A7DE9240B191F00067D40 /* Build configuration list for PBXNativeTarget "Wash Your Hands" */;
+			buildPhases = (
+				013A7DC9240B191D00067D40 /* Sources */,
+				013A7DCA240B191D00067D40 /* Frameworks */,
+				013A7DCB240B191D00067D40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wash Your Hands";
+			productName = "Wash Your Hands";
+			productReference = 013A7DCD240B191D00067D40 /* Wash Your Hands.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		013A7DC5240B191D00067D40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Frank Hofmann";
+				TargetAttributes = {
+					013A7DCC240B191D00067D40 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 013A7DC8240B191D00067D40 /* Build configuration list for PBXProject "Wash Your Hands" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 013A7DC4240B191D00067D40;
+			productRefGroup = 013A7DCE240B191D00067D40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				013A7DCC240B191D00067D40 /* Wash Your Hands */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		013A7DCB240B191D00067D40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013A7DFF240B6F8E00067D40 /* germany.csv in Resources */,
+				013A7DE3240B191F00067D40 /* LaunchScreen.storyboard in Resources */,
+				013A7DFD240B535E00067D40 /* europe-test-29-02-2020.csv in Resources */,
+				013A7DE0240B191F00067D40 /* Assets.xcassets in Resources */,
+				013A7DDE240B191D00067D40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		013A7DC9240B191D00067D40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013A7DF2240B1AE800067D40 /* CHCSVParser.m in Sources */,
+				013A7DE6240B191F00067D40 /* main.m in Sources */,
+				013A7DD2240B191D00067D40 /* AppDelegate.m in Sources */,
+				013A7DD8240B191D00067D40 /* MasterViewController.m in Sources */,
+				013A7DD5240B191D00067D40 /* SceneDelegate.m in Sources */,
+				013A7DDB240B191D00067D40 /* DetailViewController.m in Sources */,
+				013A7DF4240B232400067D40 /* CSVParser.h in Sources */,
+				013A7E02240B81A900067D40 /* CovidVictim.m in Sources */,
+				013A7DF5240B235700067D40 /* CSVParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		013A7DDC240B191D00067D40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				013A7DDD240B191D00067D40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		013A7DE1240B191F00067D40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				013A7DE2240B191F00067D40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		013A7DE7240B191F00067D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		013A7DE8240B191F00067D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		013A7DEA240B191F00067D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4VRDRVAVHD;
+				INFOPLIST_FILE = "Wash Your Hands/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.designerfuzzi.Wash-Your-Hands";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		013A7DEB240B191F00067D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4VRDRVAVHD;
+				INFOPLIST_FILE = "Wash Your Hands/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.designerfuzzi.Wash-Your-Hands";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		013A7DC8240B191D00067D40 /* Build configuration list for PBXProject "Wash Your Hands" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013A7DE7240B191F00067D40 /* Debug */,
+				013A7DE8240B191F00067D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		013A7DE9240B191F00067D40 /* Build configuration list for PBXNativeTarget "Wash Your Hands" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013A7DEA240B191F00067D40 /* Debug */,
+				013A7DEB240B191F00067D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 013A7DC5240B191D00067D40 /* Project object */;
+}

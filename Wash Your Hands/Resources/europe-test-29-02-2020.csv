@@ -1,0 +1,38 @@
+source      ,date     ,Lat       ,Long       ,Country/Region ,description    ,qu,co,re,de,gender
+github      ,29/02/20 ,47.000000 ,2.000000   ,France         ,unknown        ,0 ,1 ,0 ,0 ,x
+github      ,29/02/20 ,51.000000 ,9.000000   ,Germany        ,unknown        ,0 ,1 ,0 ,0 ,x
+github      ,29/02/20 ,43.000000 ,12.000000  ,Italy          ,unknown        ,0 ,1 ,0 ,0 ,x
+github      ,29/02/20 ,50.833302 ,4.000000   ,Belgium        ,unknown        ,0 ,1 ,0 ,0 ,x
+github      ,29/02/20 ,46.818199 ,8.227500   ,Switzerland    ,unknown        ,0 ,1 ,0 ,0 ,x
+github      ,29/02/20 ,47.516201 ,14.550100  ,Austria        ,unknown        ,0 ,1 ,0 ,0 ,x
+github      ,29/02/20 ,56.263901 ,9.501800   ,Denmark        ,unknown        ,0 ,1 ,0 ,0 ,x
+github      ,29/02/20 ,52.132599 ,5.291300   ,Netherlands    ,unknown        ,0 ,1 ,0 ,0 ,x
+github      ,29/02/20 ,43.942402 ,12.457800  ,San Marino     ,unknown        ,0 ,1 ,0 ,0 ,x
+------------,29/02/20 ,0         ,0          ,---------------,---------------,0 ,0 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,43.000000 ,12.000000  ,Siena          ,PlayerClubPiane,1 ,1 ,0 ,0 ,m
+ksta.de     ,29/02/20 ,43.000000 ,12.000000  ,Siena          ,Club-US-Pianese,20,0 ,0 ,0 ,m
+ksta.de     ,29/02/20 ,43.000000 ,12.000000  ,Italy          ,Lombardei      ,1128,1128,50,29,x
+------------,29/02/20 ,0         ,0          ,---------------,---------------,0 ,0 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,0         ,0          ,Bayern         ,BusToAustria   ,20,0 ,0 ,0 ,w
+ksta.de     ,29/02/20 ,0         ,0          ,Giessen        ,Mitbewohner    ,4 ,4 ,0 ,0 ,m
+ksta.de     ,29/02/20 ,0         ,0          ,Duisburg       ,KarnevalHeinsb.,2 ,2 ,0 ,0 ,w
+ksta.de     ,29/02/20 ,0         ,0          ,Mönchengladbach,TeacherKarneval,1 ,0 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,0         ,0          ,Mönchengladbach,Schüler++      ,70,0 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,0         ,0          ,Mönchengladbach,Teacher++      ,40,0 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,0         ,0          ,München        ,Oberbayern     ,3 ,3 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,0         ,0          ,München        ,Mittel en  ,1 ,1 ,0 ,0 ,m
+ksta.de     ,29/02/20 ,0         ,0          ,Bremen         ,1962ausIran    ,1 ,1 ,0 ,0 ,w
+ksta.de     ,29/02/20 ,0         ,0          ,Köln           ,KarnevalHeinsb.,1 ,1 ,0 ,0 ,w
+ksta.de     ,29/02/20 ,0         ,0          ,Lüdenscheid    ,LehrerHeinsb.  ,1 ,1 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,0         ,0          ,Lüdenscheid    ,++Schule       ,36,0 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,0         ,0          ,Heinsberg      ,ErzieherHeinsb ,1 ,1 ,0 ,0 ,w
+ksta.de     ,29/02/20 ,0         ,0          ,Heinsberg      ,Kinder++       ,4 ,4 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,0         ,0          ,Köln-Kalk      ,DBStellwerker  ,1 ,0 ,0 ,0 ,m
+ksta.de     ,29/02/20 ,0         ,0          ,Bonn-Poppeldorf,SchulMAKarnevl ,1 ,1 ,0 ,0 ,m
+ksta.de     ,29/02/20 ,0         ,0          ,Düsseldorf     ,++Heinsb.      ,37,0 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,0         ,0          ,Hochtaunuskreis,27jHessen      ,1 ,1 ,0 ,0 ,m
+ksta.de     ,29/02/20 ,0         ,0          ,Düsseldorf     ,Ernst&Young    ,1500,0 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,0         ,0          ,Bielefeld      ,SafetyMGladbach,0 ,0 ,0 ,0 ,x
+ksta.de     ,29/02/20 ,0         ,0          ,Henstedt-Ulzburg,UKE-Arzt       ,1,1,0,0,x
+ksta.de     ,29/02/20 ,0         ,0          ,Henstedt-Ulzburg,Eppendorf-UKE  ,50,0,0,0,x
+ksta.de     ,29/02/20 ,0         ,0          ,Brandenburg    ,Tropical-I Krausnick-Groß Wasserburg, 91,0,0,0,x
