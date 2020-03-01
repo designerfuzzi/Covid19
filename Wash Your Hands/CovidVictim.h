@@ -7,35 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MapKit/MKGeometry.h>
+//#import <MapKit/MKGeometry.h>
+//#import <MapKit/MKAnnotation.h>
+#import <MapKit/MapKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger, CovidStatus) {
+    CovidStatusPatientNull = 0,
+    CovidStatusQuarantaine,
+    CovidStatusConfirmed,
+    CovidStatusRecovered,
+    CovidStatusDeath
+};
 
-@interface CovidVictim : NSObject
-
-@property (nonatomic) NSDate *date;
-
-@property (nonatomic) NSString *state;
-
-@property (nonatomic) NSString *city;
-/** amount,
- * people involved with this item
-*/
-@property (nonatomic) NSUInteger amount;
-/** gender data
- * 0=womanXX,
- * 1=manXY,
- * 2=both||unknown
- */
-@property (nonatomic) NSUInteger gender;
-
-/** coord
- NSValue keeping CLLocationCoordinates Longitude & Latitude
- the valueWithMKCoordinate extension is part of <MapKit/MKGeometry.h>
-*/
-@property (nonatomic) NSValue *coord;
-
+@interface CovidVictim : NSObject <MKAnnotation>
 
 - (instancetype)initWithDate:(NSDate*)date
                       State:(NSString*)state
@@ -56,6 +42,36 @@ NS_ASSUME_NONNULL_BEGIN
                   Longitude:(CLLocationDegrees)longitude
                    Latitude:(CLLocationDegrees)latitude;
 
+@property (nonatomic) NSDate *date;
+
+@property (nonatomic) NSString *state;
+
+@property (nonatomic) NSString *city;
+
+@property (nonatomic, copy) NSString *title;
+
+@property (nonatomic, copy) NSString *subtitle;
+
+/** amount,
+ * people involved with this item
+*/
+@property (nonatomic) NSUInteger amount;
+/** gender data
+ * 0=womanXX,
+ * 1=manXY,
+ * 2=both||unknown
+ */
+@property (nonatomic) NSUInteger gender;
+
+@property (nonatomic) CovidStatus status;
+
+/** coord
+ NSValue keeping CLLocationCoordinates Longitude & Latitude
+ the valueWithMKCoordinate extension is part of <MapKit/MKGeometry.h>
+*/
+@property (nonatomic) NSValue *coord;
+
+- (MKMapItem*)mapItem;
 
 @end
 

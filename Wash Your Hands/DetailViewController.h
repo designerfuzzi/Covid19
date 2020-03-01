@@ -12,6 +12,9 @@
 
 @interface DetailViewController : UIViewController
 
+@property (nonatomic) NSMutableArray *objects;
+@property (nonatomic) BOOL annotationsAdded;
+
 @property (strong, nonatomic) CovidVictim *detail;
 //@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @property (nonatomic) IBOutlet MKMapView *map;

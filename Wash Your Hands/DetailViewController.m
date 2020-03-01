@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import <MapKit/MapKit.h>
+#define METERS_PER_MILE 1609.344
 
 @interface DetailViewController ()
 
@@ -17,17 +18,22 @@
 
 - (void)configureView {
     // Update the user interface for the detail item.
-    //if (self.detailItem) {
     if (self.detail) {
-        //self.detailDescriptionLabel.text = [self.detailItem description];
-        //self.detailDescriptionLabel.text = [self.detail description];
+
         //self.detailDescriptionLabel.text = [self.detail city];
         if (self.map) {
+            
             float latitude = _detail.coord.MKCoordinateValue.latitude;
             float longitude = _detail.coord.MKCoordinateValue.longitude;
             CLLocationCoordinate2D centerCoordinate = CLLocationCoordinate2DMake(latitude, longitude);
             MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance( centerCoordinate, 20000, 20000);
-            [self.map setRegion:region];
+            //MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(centerCoordinate, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
+            
+            if (self.objects && !self.annotationsAdded) {
+                [self.map addAnnotations:self.objects];
+                self.annotationsAdded = YES;
+            }
+            [self.map setRegion:region animated:NO];
         }
     }
 }

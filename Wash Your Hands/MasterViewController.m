@@ -13,11 +13,14 @@
 @interface MasterViewController ()
 
 @property NSMutableArray *objects;
+
 @end
+
 
 @implementation MasterViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
@@ -30,16 +33,19 @@
     [self readPredefinedResourceCSVData];
     
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
 }
 
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated
+{
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
     [super viewWillAppear:animated];
 }
 
 
-- (void)insertNewObject:(id)sender {
+- (void)insertNewObject:(id)sender
+{
     if (!self.objects) {
         self.objects = [[NSMutableArray alloc] init];
     }
@@ -51,40 +57,46 @@
 
 #pragma mark - Segues
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        //NSDate *object = self.objects[indexPath.row];
-        //NSValue *object = self.objects[indexPath.row];
+       
         CovidVictim *object = self.objects[indexPath.row];
+        
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        //controller.detailItem = object;
+        
+        controller.objects = self.objects;
+        
         controller.detail = object;
         NSString *title = [[NSString alloc] initWithFormat:@"%@ %@", object.date.description, object.state ];
         controller.navigationItem.title = title;
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
         self.detailViewController = controller;
+        
     }
 }
 
 
 #pragma mark - Table View
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 1;
 }
 
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return self.objects.count;
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    
     //NSDate *object = self.objects[indexPath.row];
     //cell.textLabel.text = [object description];
     
@@ -95,13 +107,15 @@
 }
 
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
 
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self.objects removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -111,7 +125,9 @@
 }
 
 
--(void)readPredefinedResourceCSVData {
+-(void)readPredefinedResourceCSVData
+{
+    
     //NSString *name =@"time_series_19-covid-Confirmed";
     NSString *name =@"germany";
     
@@ -192,10 +208,12 @@
                 
             }
         }
-    
+            
     }
 }
-- (void)insertNewCovidItem:(CovidVictim*)item {
+
+- (void)insertNewCovidItem:(CovidVictim*)item
+{
     if (!self.objects) {
         self.objects = [[NSMutableArray alloc] init];
     }
@@ -205,4 +223,5 @@
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
+
 @end
