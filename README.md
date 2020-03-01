@@ -1,3 +1,7 @@
+<p align="center">
+  <img alt="screenshot of wash your hands" src="Covid19-germany-washyourhands.png" width="980">
+</p>
+
 # Covid19 - Wash your hands.app
  iOS(13) master detail view app. No external dependencys.
  Parses a CSV file and shows geolocation of german covid19 cases taken from local news 
