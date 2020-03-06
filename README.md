@@ -43,3 +43,9 @@
  added: show annotations where cases are located on the map
  
  added: preparations and implementation of title and subtitles for annotations
+
+# License
+ 
+ GPL-3
+ 
+ make it public available as source when you change it and all is fine, if not - covid-19 may catch you and the lawers have fun.
